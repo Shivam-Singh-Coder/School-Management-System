@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: lightblue;
+}
+h1{
+    margin-top:2rem;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+.form{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.form .maintable{
+    width: 100%;
+}
+.form .maintable tr td{
+    width: 33%;
+    padding: 1rem;
+    height: 6rem;
+    font-size: 2rem;
+}
+.form .maintable tr td select{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.form .maintable tr td .submit{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    transition: all .4s ease-in-out;
+    background-color: #3897f2;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    &:hover {
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    }
+}
+.form .maintable tr td .reset{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    transition: all .4s ease-in-out;
+    background-color: rgb(237, 36, 77);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    &:hover {
+        background-color: rgb(237, 36, 77);
+        box-shadow: 0 4px 15px 0 rgba(220, 20, 60, 0.813);
+    }
+}
+.data{
+    width: 90%;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+}
+.data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.data table thead th{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    background-color: beige;
+}
+.data table tbody td{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+label{
+    /* border: 2px solid red; */
+    position: absolute;
+    z-index: 1;
+    font-size: 1.8rem;
+    margin-left: 2%;
+    margin-top:-1rem;
+    background-color: white;
+    
+    
+}
+#l1{
+    visibility: hidden;
+}
+#t1,#t2,#t3,#t4,#t5{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
+}
+/* #t1,#t2{
+    position: absolute;
+} */
+.fa-pen-to-square{
+    color: blue;
+    font-size: 2rem;
+}
+i{
+    color: red;
+    font-size: 2rem;
+}
+@media (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+
+}
+@media (max-width:768px) {
+
+    html {
+        font-size: 45%;
+    } 
+    
+    .form .maintable tr td{
+        display: block;
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .form .maintable tr td select{
+       display: block;
+    }
+    #t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8{
+        width: 100%;
+    }
+    /* .data table tbody td{
+        display:inline-block;
+    } */
+    /* .data table thead th{
+        display: inline-block;
+    } */
+}
+@media (max-width:600px) {
+
+    html {
+        font-size: 45%;
+    }
+}

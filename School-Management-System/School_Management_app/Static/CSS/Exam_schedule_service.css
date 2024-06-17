@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: lightblue;
+}
+.form{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.form .maintable{
+    width: 100%;
+}
+.form .maintable tr td{
+    width: 33%;
+    padding: 1rem;
+    height: 6rem;
+    font-size: 1.5rem;
+}
+.form .maintable tr td select{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.form .maintable tr td .submit{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+    background-color: #3897f2;
+
+    &:hover {
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    }
+}
+.form .maintable tr td .reset{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+    background-color: rgb(237, 36, 77);
+
+    &:hover {
+        background-color: rgb(237, 36, 77);
+        box-shadow: 0 4px 15px 0 rgba(220, 20, 60, 0.813);
+    }
+}
+.data{
+    width: 90%;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.data table thead th{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    background-color: beige;
+}
+.data table tbody td{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}

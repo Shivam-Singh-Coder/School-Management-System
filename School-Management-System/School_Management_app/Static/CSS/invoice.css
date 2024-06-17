@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #8bc3f793;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+.a4-container {
+    width: 100rem;
+    height: 100%;
+    padding-top: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    margin: auto;
+}
+
+.content {
+    width: 99%;
+    height: 80%;
+    background-color: white;
+    /* border: 1px solid #000000; */
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 1rem;
+}
+.content h5{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.content .sub-content{
+    /* border: 2px solid red; */
+    width: 100%;
+    position: relative;
+    height: 15rem;
+}
+.content .sub-content .sub-c1{
+    width: 20%;
+    /* border: 2px solid blue; */
+}
+.content .sub-content .sub-c1 img{
+    width: 100%;
+    height: 100%;
+}
+.content .sub-content .sub-c2{
+    width: 70%;
+    position: absolute;
+    /* border: 2px solid green; */
+    top: 0;
+    right: 0;
+}
+
+/* .sub-c2 table ,tr,td{
+    border: 2px solid red;
+} */
+.sub-c2 table td {
+    font-size: 1.5rem;
+    width: 25rem;
+    position: relative;
+    height: 5rem;
+}
+.sub-c2 table td div{
+    width: 70%;
+    right: 0;
+    bottom: 1rem;
+    position: absolute;
+    text-align: center;
+    border-bottom: 2.5px dotted rgb(49, 46, 46);
+}
+.content .sub-content .sub-c3{
+    width: 100%;
+    
+    /* border: 2px solid blue; */
+}
+
+
+.sub-c3 table{
+    width: 100%;
+}
+.sub-c3 table td {
+    width: 50%;
+    font-size: 1.5rem;
+    
+    position: relative;
+    height: 5rem;
+}
+.sub-c3 table td div{
+    width: 50%;
+    right: 0;
+    bottom: 1rem;
+    position: absolute;
+    text-align: center;
+    border-bottom: 2.5px dotted rgb(49, 46, 46);
+}
+.content  .sub-c3{
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+.content .terms{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding-top: 3rem;
+    position: relative;
+}
+.terms h1{
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.content .conditions{
+    font-size: 1.3rem;
+    text-align: justify;
+    width: 100%;
+}
+.content button{
+    width: 10rem;
+    position: absolute;
+    top: -2rem;
+    height: 3rem;
+    border: none;
+    color: #ffffff;
+    background-color: grey;
+    cursor: pointer;
+    right: 0;
+}
+@media screen and (max-width: 1045px){
+    html {
+        font-size: 42%;
+      }
+}
+@media screen and (max-width: 713px){
+    html {
+        font-size: 35%;
+      }
+}
+@media screen and (max-width: 576px){
+    html {
+        font-size: 25%;
+      }
+}

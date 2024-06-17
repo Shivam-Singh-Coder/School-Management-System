@@ -1,0 +1,177 @@
+      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+} 
+.main{
+    height: auto;
+    padding: .8rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: .3rem;
+}
+.main_div{
+    padding: 2rem;
+    background-color:#0C2D57;
+    border-radius: .5rem .5rem 0 0;
+    
+    box-shadow: rgba(94, 94, 222, 0.331) 0px 0px 8px 0px;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    /* padding: 2rem; */
+    color:white;
+    letter-spacing: .1rem;
+}
+
+
+.d1 {
+    /* border: 1px solid black; */
+    padding: 2rem;
+    width: 100%;
+    
+    border-radius:0 0 .5rem .5rem ;
+    /* margin-top: 2rem; */
+    box-shadow: rgba(94, 94, 222, 0.281) 0px 7px 8px 0px;
+}
+/* .d1 form .table,td{
+    border: 2px solid red;
+} */
+.d1 form .table td{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    position: relative;
+}
+.d1 form .table td input[type="text"],
+.d1 form .table td input[type="date"],
+.d1 form .table td select
+{
+    border: none;
+    outline: none;
+    height: 5rem;
+    width: 90%;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: rgba(138, 138, 229, 0.308) 0px 2px 8px 0px;
+}
+.d1 form .table td label{
+    position: absolute;
+    top: 1rem;
+    left: 3.5rem;
+    font-size: 1.5rem;
+    color: #2a5691;
+}
+.d1 form .table td #desc{
+    width: 95%;
+    height: 5rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: .5rem;
+    box-shadow: rgba(138, 138, 229, 0.308) 0px 2px 8px 0px;
+}
+.d1 form .table td .for_btn{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+.new_member{
+    position:absolute;
+    cursor: pointer;
+    right:0;
+    /* top: bot; */
+    bottom: 0;
+    font-size: 1.5rem;
+    background-image: linear-gradient(#0dccea, #0d70ea);
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 10px;
+  
+}
+#b3,#b4{
+    width: 12rem;
+    height: 4rem;
+    border-radius: .2rem;
+    border: none;
+    background-color: green;
+    color: aliceblue;
+    font-size: 1.6rem;
+    &:hover{
+        background-color: rgb(16, 223, 16);
+    }
+}
+#b4{
+    background-color: rgb(163, 42, 42);
+    &:hover{
+        background-color: rgb(240, 30, 30);
+    }
+}
+
+/* =========================== */
+#d5 {
+    position: relative;
+    height: 30rem;
+    overflow-y: auto;
+    margin-top: 3rem;
+    /* border: 2px solid red; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+#table3 {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#table3 th,
+#table3 td {
+    height: 4rem;
+    border: 1px solid black;
+    width: 10rem;
+}
+
+#table3 th {
+    /* position: sticky; */
+    top: 0;
+    background-color: rgb(233, 211, 183);
+}
+
+.d1 table span{
+    position: absolute;
+    bottom:0rem;
+    right: 6rem;
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+@media (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+    .table td{
+        display: block;
+    }
+    .d1 form .table td label{
+        left: 5.5rem;
+    }
+    .d1 form .table td #desc{
+        width: 90%;
+    }
+}

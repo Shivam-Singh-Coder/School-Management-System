@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+.data {
+    width: 95%;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: .5rem;
+    overflow-x: scroll;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.data table {
+    width: 100%;
+    border: 2px solid red;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.data table thead th {
+    padding: 1rem;
+
+    width: 30rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+.data table tbody td {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+.reg-form .reg-table td #search{
+    padding-left: 4rem;
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    top: 2rem;
+    /* padding-left: 5rem; */
+    padding-right: 0.7rem;
+    /* cursor: pointer; */
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1); 
+}
+.srcbox{
+    display: none;
+}
+::-webkit-scrollbar {
+    height: .5rem;
+    width: .5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #153884;
+    border-radius: .5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #DDE6ED;
+    border-radius: .4rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8c949a;
+}
+
+.data table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.data table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+.data table tr {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+.data table th,
+.data table td {
+    padding: .625em;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 786px) {
+    html {
+        font-size: 35%;
+    }
+    .reg-form .reg-table td #search{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .data table {
+        border: 0;
+    }
+
+
+
+    .data table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        color: red;
+        background-color: #000;
+    }
+
+    .data table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    .data table td {
+        /* border-bottom: 1px solid #ddd; */
+        border: 2px solid red;
+        display: block;
+        height: 5rem;
+        font-size: 2rem !important;
+        text-align: right !important;
+        /* float: right; */
+    }
+
+    .data table td:before {
+
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        /* text-transform: uppercase; */
+    }
+
+    .data table td:last-child {
+        border-bottom: 0;
+    }
+
+    .data table td:first-child {
+        color: white;
+        background: #0c1d71;
+    }
+}

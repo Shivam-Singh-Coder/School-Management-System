@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: lightblue;
+}
+#content{
+    /* border: 2px solid rgb(40, 32, 138); */
+    padding-bottom: 5rem;
+    width: 95rem;
+    padding-top: 1rem;
+    background-color: white;
+    margin: auto;
+}
+#content .heading{
+    /* border: 2px solid rgb(129   , 176, 19); */
+    width: 98%;
+    margin: auto;
+    /* height: 13rem; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+#content .heading div{
+    height: 18rem;
+    position: relative;
+    /* border: 2px solid rgb(225, 67, 202); */
+
+}
+.heading div img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#content .heading div h1{
+    position: absolute;
+    top: 20%;
+    right: 2rem;
+    /* border: 2px solid red; */
+    color: rgb(35, 35, 137);
+    text-align: right;
+    font-size: 4rem;
+    text-shadow: 5px 1px 2px rgba(230, 223, 227, 1);
+}
+#content .heading div span{
+    /* border: 2px solid red; */
+    text-align: right;
+    font-size: 2rem;
+
+    color: grey;
+    position: absolute;
+    right: 2rem;
+    bottom: 30%;
+}
+.mainpart{
+    width: 100%;
+    /* height: 50rem; */
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.mainpart table{
+   
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    /* width: 85%; */
+}
+.mainpart table th,td{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 15rem;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+.mainpart table th{
+    background-color: rgb(97, 97, 217);
+    
+    color: white;
+}
+#printButton{
+    width: 10rem;
+    position: absolute;
+    /* top: -2rem; */
+    bottom: 5rem;
+    right: 15rem;
+    height: 3rem;
+    border: none;
+    color: #ffffff;
+    background-color: grey;
+    cursor: pointer;
+   
+}
+@media screen and (max-width: 1045px){
+    html {
+        font-size: 42%;
+      }
+}
+@media screen and (max-width: 713px){
+    html {
+        font-size: 35%;
+      }
+}
+@media screen and (max-width: 576px){
+    html {
+        font-size: 25%;
+      }
+}

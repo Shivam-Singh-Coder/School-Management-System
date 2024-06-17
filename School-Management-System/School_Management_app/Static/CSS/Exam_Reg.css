@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    height: 6rem;
+    background-color: #3897f2;
+    color: white;
+}
+
+header h1 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-shadow: 1px 1px 2px black;
+}
+
+body {
+    background-color: #8bc3f793;
+}
+.Exam-reg-form {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: white;
+}
+
+.Exam-reg-form .Exam-reg-table {
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.Exam-reg-form .Exam-reg-table td {
+    width: 30%;
+    height: 6rem;
+    position: relative;
+}
+
+.Exam-reg-form .Exam-reg-table td input,
+.Exam-reg-form .Exam-reg-table td select {
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 70%;
+    width: 90%;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.Exam-reg-form .Exam-reg-table td select{
+    text-align: center;
+}
+.Exam-reg-form .Exam-reg-table td .l_fixed {
+    font-size: 1.5rem;
+    position: absolute;
+    background-color: white;
+    left: 1rem;
+    top: 0.2rem;
+}
+.Exam-reg-form .record_table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.Exam-reg-form .record_table th{
+    width: 15%;
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding: 1rem;
+    border: 1px solid blue;
+    text-align: center;
+    background-color: #3898f2b6;
+    color: white;
+}
+.Exam-reg-form div #myInput{
+    padding-left: 1rem;
+    border: none;
+    display: none;
+    border-radius: 0.5rem;
+    outline: none;
+    margin-left: 2rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    background-color: #dfeaf4b6;
+    height: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.heading-row{
+    display: none;
+}
+
+.Exam-reg-form .record_table td{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    background-color: rgb(255, 244, 231);
+}
+.Exam-reg-form .Exam-reg-student-table td input[type="checkbox"],
+.Exam-reg-form .Exam-reg-student-table th input[type="checkbox"]{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.Exam-reg-form .record_table td .submit,
+.Exam-reg-form .Exam-reg-student-table td .submit {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+    background-color: #3897f2;
+
+    &:hover {
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    }
+
+}
+
+.Exam-reg-form .record_table td .reset,
+.Exam-reg-form .Exam-reg-student-table  td .reset {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+    background-color: rgb(237, 36, 77);
+
+    &:hover {
+        background-color: rgb(237, 36, 77);
+        box-shadow: 0 4px 15px 0 rgba(220, 20, 60, 0.813);
+    }
+}
+.reg-form-buttons {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 20%; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+    margin: auto;
+  }
+.entry-button{
+    padding: .5rem 1rem;
+    font-size: 1.8rem;
+    font-size: bold;
+    border: none;
+    outline: none;
+    background-color: #07cd18;
+    color: white;
+    cursor: pointer;
+    width: 10% !important;
+    border-radius: .5rem;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+   
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    .Exam-reg-form .Exam-reg-table td {
+        height: 6rem;
+    }
+
+}
+@media(max-width:768px){
+
+    .Exam-reg-form .Exam-reg-table td {
+        height: 5rem;
+    }
+    .Exam-reg-form .Exam-reg-table td .submit,
+.Exam-reg-form .Exam-reg-student-table  td .submit,
+.Exam-reg-form .Exam-reg-table td .reset,
+.Exam-reg-form .Exam-reg-student-table  td .reset{
+    font-size: 1rem;
+}
+}
+@media(max-width:600px){
+    html{
+        font-size: 55%;
+    }
+    .Exam-reg-form .Exam-reg-table td {
+        height: 6rem;
+        display: block;
+        width: 100%;
+        margin-left: 5%;
+    }
+    .Exam-reg-form .Exam-reg-table td .l_fixed {
+        top: -1rem;
+        /* font-size: 2rem; */
+    }
+    .Exam-reg-form .Exam-reg-student-table thead{
+        display: none;
+    }
+    .Exam-reg-form .Exam-reg-student-table td{
+        display: block;
+        width: 100%;
+        text-align: right !important;
+        position: relative;
+    }
+    .Exam-reg-form .Exam-reg-student-table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        text-align: left;
+        padding-left: 1rem;
+        height: 100%;
+    }
+    #tab2  tr td:last-child{
+        margin-bottom: 2rem;
+    }
+}

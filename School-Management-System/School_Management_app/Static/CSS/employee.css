@@ -1,0 +1,917 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  /* background-color: #b998ffee; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.pic1{
+  position: relative;
+}
+.img-box{
+  position: absolute;
+  /* border: 2px solid rebeccapurple; */
+  /* left: 0; */
+  top: 0rem;
+  display: none;
+  width: 100%;
+  height: 100%;
+ 
+}
+.for-signature{
+  position: relative;
+}
+.for-signature .img-box{
+  width: 100%;
+}
+.img-box img{
+  /* border: 2px solid rgb(26, 71, 168); */
+  height: 100%;
+  margin: auto;
+  /* position: absolute; */
+  width: 100%;
+  /* z-index: 99; */
+}
+.for-img{
+  border: 1px solid black;
+  height: 20rem;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 0;
+  width: 20rem;
+  margin: auto;
+}
+.auto-img{
+  width: 100%;
+  height: 70%;
+}
+.l_upload{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-size: 2rem;
+  z-index: 999999;
+  text-align: center;
+  cursor: pointer;
+  bottom: 0rem;
+}
+.l-sign{
+  z-index: 999;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: 8rem;
+}
+
+header div .img {
+  height: 8rem;
+  width: 8rem;
+  filter: drop-shadow(2px 2px 2px)white;
+}
+
+header div h1 {
+  font-size: 5rem;
+  color: black;
+}
+
+body {
+  background-color: #8bc3f793;
+}
+.new_member{
+  position:absolute;
+  cursor: pointer;
+  right:0;
+  /* top: bot; */
+  bottom: 0;
+  font-size: 1.5rem;
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 10px;
+
+}
+.reg-form {
+  /* border: 2px solid red; */
+  width: 100%;
+  background-color: #ffffff;
+  padding: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.reg-form .reg-table {
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.374) 0px 3px 8px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  /* margin-top: 1rem; */
+  /* padding: 2rem; */
+  border-collapse: collapse;
+
+}
+
+.reg-form .reg-table td {
+  /* border: 2px solid red; */
+  position: relative;
+  height: 9rem;
+  text-align: center;
+}
+
+
+.reg-form .reg-table td input[type="text"],
+.reg-form .reg-table td input[type="email"],
+.reg-form .reg-table td input[type="date"],
+.reg-form .reg-table td input[type="time"],
+.reg-form .reg-table td input[type="month"],
+.reg-form .reg-table td select,
+.reg-form .reg-table td #Designation,
+.reg-form .reg-table td #vehicle,
+.reg-form .reg-table td #Designations,
+.reg-form .reg-table td #vehicles{
+  width: 90%;
+  height: 50%;
+  top: 2rem;
+  padding-left: 2.5rem !important;
+  /* padding-right: 1rem; */
+  /* cursor: pointer; */
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.reg-form .reg-table td input[type="date"]{
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.reg-form .reg-table td #Designation{
+  padding-left: 4rem;
+  width: 90%;
+  height: 50%;
+  /* position: absolute; */
+  top: 2rem;
+  /* padding-left: 5rem; */
+  padding-right: 0.7rem;
+  /* cursor: pointer; */
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1); 
+}
+
+
+.reg-form .reg-table td input[type="file"] {
+  scale: 0;
+}
+
+#Name,
+#f_name,
+#m_name,
+#e_name,
+#spouse_name {
+  width: 95%;
+}
+.reg-form .reg-table td .resizesable{
+  width: 100%;
+}
+.reg-form .reg-table td input[type="text"],
+.reg-form .reg-table td input[type="email"],
+.reg-form .reg-table td input[type="time"] {
+  padding-left: 5rem;
+}
+
+.reg-form .reg-table td input[type="text"]:hover,
+.reg-form .reg-table td input[type="email"]:hover,
+.reg-form .reg-table td input[type="date"]:hover,
+.reg-form .reg-table td select:hover {
+  border: 1px solid skyblue;
+  box-shadow: rgba(59, 216, 255, 0.3) 0px 2px 2px, rgba(8, 131, 255, 0.22) 0px 2px 2px;
+}
+
+.reg-form .reg-table td select {
+  text-align: left;
+  padding-left: 5rem;
+}
+
+
+.reg-form .reg-table td textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.5rem;
+  height: 70%;
+  border-radius: .2rem;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  padding-top: 1.5rem;
+  padding-left: 4rem;
+  text-transform: capitalize;
+  /* border: 2px solid red; */
+
+}
+
+
+.gen {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 90% !important;
+}
+
+.gen div {
+  /* border: 2px solid red; */
+  display: flex;
+  width: auto;
+  padding-right: 1rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.reg-form .reg-table td .l_move {
+  font-size: 1.5rem;
+  /* border: 2px solid red; */
+  position: absolute;
+  width: auto;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: black;
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 2rem;
+  left: 3rem;
+  /* cursor: pointer; */
+  transition: 0.3s;
+}
+.reg-form .reg-table td .show-notification{
+  position: absolute;
+  bottom: .5rem;
+  right: 4rem;
+}
+.reg-form .reg-table td .l_fixed {
+  font-size: 1.5rem;
+  position: absolute;
+  background-color: #fff;
+  top: 1rem;
+  left: 2.5rem;
+  z-index: 111;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  color: black;
+  cursor: pointer;
+}
+.reg-form .reg-table td .l_doc{
+  font-size: 1.5rem;
+  position: absolute;
+  background-color: #fff;
+  display: none;
+  border-radius: .2rem;
+  top: .5rem;
+  left: 4rem;
+  z-index: 111;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-bottom: .5rem;
+  color: black;
+  cursor: pointer;
+}
+.reg-form .reg-table td .notify{
+  font-size:1.5rem;
+  position: absolute;
+  bottom:-1rem;
+  right:2rem;
+}
+.reg-form .reg-table .adrs{
+  width: 70%;
+  /* border: 2px solid red; */
+  padding-top: 1rem;
+  
+}
+.reg-form .reg-table .adrs input{
+  left: 2rem;
+  top: 30% !important;
+  position: absolute;
+}
+.reg-form .reg-table td .l_heading {
+  font-size: 1.8rem;
+  color: black;
+  cursor: not-allowed;
+  top: 50%;
+}
+
+.reg-form .reg-table td .l_nomoves {
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+.reg-form-buttons {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  align-items: center;
+  width: 100%;
+
+  margin: auto;
+}
+
+.reg-form-submit {
+  width: 13rem;
+  height: 4.5rem;
+  border-radius: .5rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+
+
+}
+
+#submit {
+  background-color: rgb(53, 185, 53);
+  border: none;
+}
+
+#submit:hover {
+  position: relative;
+  background-color: rgb(25, 92, 25);
+
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: 0;
+    height: 50px;
+    width: 7px;
+    background: rgba(255, 255, 255, .8);
+    filter: blur(5px);
+    transform: translateX(-15px) rotate(20deg);
+    animation: shine 1s infinite linear;
+  }
+}
+
+@keyframes shine {
+  100% {
+    transform: translateX(120px) rotate(20deg)
+  }
+}
+
+#reset {
+  background-color: rgb(224, 126, 69);
+  border: none;
+}
+
+#reset:hover {
+  position: relative;
+  background-color: rgb(179, 2, 2);
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: 0;
+    height: 50px;
+    width: 7px;
+    background: rgba(255, 255, 255, .8);
+    filter: blur(5px);
+    transform: translateX(-15px) rotate(20deg);
+    animation: shine 1s infinite linear;
+  }
+}
+
+@keyframes shine {
+  100% {
+    transform: translateX(120px) rotate(20deg)
+  }
+}
+
+
+.cross {
+  font-size: 2rem;
+
+}
+
+.i1,
+.i2 {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  color: rgb(49, 49, 49);
+}
+.i2{
+  left: 3rem;
+}
+.upload-icon{
+  font-size: 1.5rem;
+ 
+  color: rgb(49, 49, 49);
+}
+
+.reg-form .reg-table .sign .i2 {
+  top: 40%;
+  z-index: 999;
+}
+
+.pic {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 20rem;
+  width: 18rem;
+  z-index: 999;
+  /* margin-left: 8rem; */
+  padding: 2rem;
+}
+
+.pic label {
+  position: absolute;
+  text-align: center;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  /* padding-top: 8rem; */
+  border-radius: 5px;
+  margin-left: -4rem;
+  margin-top: -.9rem;
+}
+
+.pic input {
+  border: 2px solid red;
+  width: 2rem;
+}
+
+#logo {
+  height: 70%;
+  width: 100%;
+  filter: contrast(120%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+.reg-form .reg-table td  .sign {
+
+  border: 2px solid rgb(11, 20, 151);
+  border-radius: 5px;
+  height: 6rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #BFCFE7;
+}
+.signature{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  top: -1rem;
+  background-color: white;
+  overflow: hidden;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  width: 100%;
+  height: 5rem;
+  position: relative;
+}
+.signature label{
+  position: absolute;
+  height: 100%;
+  padding-top: 2rem;
+  width: 100%;
+  cursor: pointer;
+  bottom: 0;
+  font-size: 2rem;
+  background-color: white;
+  text-align: center;
+}
+.reg-form .reg-table td .sign label {
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  height: 90%;
+  padding-top: 1rem;
+  text-align: center;
+  width: 90%;
+  border: 2px solid rgb(63, 196, 196);
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.sign .h_qulification{
+  width: auto;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.sign input {
+  width: 2rem;
+
+  margin-left: 2rem;
+}
+.entry-button{
+  padding: .5rem 1rem;
+  font-size: 1.8rem;
+  font-size: bold;
+  border: none;
+  outline: none;
+  background-color: #07cd18;
+  color: white;
+  cursor: pointer;
+  border-radius: .5rem;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+ 
+}
+.reg-form .reg-table .sign .pview {
+  /* border: 1px solid red; */
+  z-index: 99999;
+  position: absolute;
+  background-color: #2e10d7;
+  border-radius: 2px;
+  position: absolute;
+  right: 1.3rem;
+  width: 6.5rem;
+  height: 2rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  right: 1rem;
+  padding-left: .5rem;
+  /* padding-top:0rem; */
+  display: none;
+  /* margin-top: 10rem; */
+  bottom: .2rem;
+  /* margin-bottom: 1rem; */
+  color: white;
+  /* display: none; */
+}
+
+.reg-form .pop-op {
+  /* border: 2px solid red; */
+  position: fixed;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  overflow-x: scroll;
+  scale: 0;
+  transition: 0.45s;
+  background-color: rgba(0, 0, 0, 0.573);
+
+}
+
+.reg-form .privew-show {
+  position: relative;
+  /* border: 2px solid red; */
+  /* margin: auto; */
+  width: 80%;
+  z-index: 999999;
+  height: 90%;
+  display: flex;
+  /* overflow-y: auto;
+  overflow-x: auto; */
+  justify-content: center;
+  align-items: center;
+  padding-top:5rem;
+  
+  padding: 5rem;
+  
+  background-color: rgb(86, 83, 83);
+  box-shadow: rgba(189, 189, 189, 0.09) 0px 2px 1px, rgba(149, 148, 148, 0.09) 0px 4px 2px, rgba(211, 211, 211, 0.09) 0px 8px 4px,
+    rgba(252, 252, 252, 0.09) 0px 16px 8px, rgba(250, 241, 241, 0.09) 0px 32px 16px;
+
+}
+.reg-form .privew-show img{
+  min-height: 50%;
+  max-width: 80%;
+  height: 90%;
+  z-index: 999999;
+
+}
+.reg-form .privew-show #doc{
+  margin: auto;
+}
+.reg-form .pop-op .privew-show .cut {
+  position: absolute;
+  border: 2px solid red;
+  height: 3rem;
+  top: 0;
+  width: 3rem;
+  right: 0;
+  text-align: center;
+  background-color: rgb(141, 141, 133);
+  cursor: pointer;
+
+}
+
+.reg-form .pop-op .privew-show .cut i {
+  font-size: 3rem;
+  color: red;
+
+
+}
+.address:nth-child(1){
+  /* border: 2px solid red; */
+  width: 60% !important;
+}
+
+@media screen and (max-width: 1296px) {
+  html {
+    font-size: 40%;
+  }
+  .reg-form .reg-table .sign span{
+    right: 0;
+    bottom: -.5rem  ;
+  }
+  .gen div label{
+    font-size: 1.2rem !important;
+    /* border: 2px solid red; */
+  }
+  
+}
+@media screen and (max-width: 1160px) {
+  html {
+    font-size: 42%;
+  }
+
+}
+
+@media screen and (max-width: 998px) {
+  html {
+    font-size: 40%;
+  }
+  
+  .reg-form .reg-table td select{
+    font-size: 1.5rem;
+  }
+  .reg-form .reg-table .sign span {
+    right: 0rem;
+    bottom: -.5rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 883px) {
+  html {
+    font-size: 35%;
+  }
+
+  .reg-form .reg-table .sign span {
+    right: 0rem;
+    bottom: 0rem;
+  }
+  .gen div label{
+    font-size: 1.5rem !important;
+    /* border: 2px solid red; */
+  }
+  
+}
+
+@media screen and (max-width: 786px) {
+  html {
+    font-size: 35%;
+  }
+
+  header div img {
+    height: 5rem;
+    width: 5rem;
+    padding: 0;
+    filter: drop-shadow(2px 2px 2px)white;
+  }
+
+  header {
+    /* border: 2px solid red; */
+    height: auto;
+    padding: 0;
+  }
+  
+  header div h1 {
+    font-size: 3rem;
+    color: black;
+    padding: 0;
+  }
+
+  .reg-form {
+    /* border: 2px solid red; */
+    padding: 0;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h2 {
+    /* border: 2px solid red; */
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+  }
+  .reg-form .reg-table .adrs{
+    width: 90%;
+    
+    /* border: 2px solid red; */
+    padding-top: 1rem;
+    
+  }
+  .reg-form .reg-table .adrs input{
+    left: 0;
+  }
+  .reg-form .reg-table {
+    /* border: 2px solid red; */
+    width: 100%;
+
+    padding-top: 1rem;
+  }
+
+  .reg-form .reg-table td {
+    /* border: 2px solid red; */
+    display: block;
+    margin: auto;
+    width: 90%;
+
+    /* margin-left: 5%; */
+    height: 12rem;
+  }
+  .reg-form .reg-table td #Designation{
+    width: 100%;
+  }
+  .reg-form .reg-table td input[type="text"],
+  .reg-form .reg-table td input[type="email"],
+  .reg-form .reg-table td input[type="date"],
+  .reg-form .reg-table td input[type="month"],
+  .reg-form .reg-table td input[type="time"],
+  .reg-form .reg-table td textarea,
+  .reg-form .reg-table td select {
+    width: 100%;
+  }
+
+  #Name,
+  #f_name,
+  #m_name,
+  #e_name,
+  #spouse_name {
+    width: 100%;
+  }
+
+  .reg-form .reg-table td textarea {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 7rem;
+  }
+
+
+
+  .reg-form .reg-table td .l_move {
+    font-size: 2.2rem;
+    left: 5rem;
+    /* margin-top: -.9rem; */
+  }
+
+  .reg-form .reg-table td .l_fixed {
+    font-size: 2.2rem;
+    margin-top: -.5rem;
+  }
+
+  .reg-form .reg-table td .l_nomoves {
+    font-size: 2.2rem;
+    margin-top: -.5rem;
+  }
+
+
+
+  .reg-form .reg-table .sign label {
+    /* border: 2px solid red; */
+    height: 5rem;
+    
+    width: 96.5%;
+    /* box-shadow: 0rem 0rem .5rem 0rem; */
+  }
+
+
+
+  .reg-form-buttons {
+    /* border: 2px solid black; */
+    margin-top: 1.5rem;
+  }
+
+  .reg-form .reg-table td .sign {
+    height: 8rem;
+  }
+
+  .sign .h_qulification{
+    width: 90%;
+  }
+  .reg-form .reg-table td .l_nomoves {
+    width: 95%;
+  }
+
+  .reg-form .reg-table td .i1 {
+    top: 4rem;
+    left: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .i2 {
+    top: 30%;
+    font-size: 2.5rem;
+  }
+
+  .gen {
+    /* border: 2px solid rgb(38, 0, 255); */
+    display: flex !important;
+    /* flex-wrap: wrap; */
+    justify-content: left;
+    /* width: 100% !important; */
+  }
+
+  .gen div {
+    /* border: 2px solid red; */
+    display: flex;
+    width: 15rem;
+    padding-right: 1rem;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .gen div label {
+    margin-left: 1rem;
+  }
+
+  .e_img {
+    /* border: 2px solid red; */
+    /* display: none; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 22rem !important;
+  }
+  .for-img{
+    margin:0%;
+  }
+  .pic {
+    height: 20rem !important;
+    position: absolute;
+    width: 20rem;
+    top: 0;
+    left: 5rem;
+  }
+
+  .pic label {
+    font-size: 1.5rem !important;
+    height: 95%;
+  }
+
+  .signature {
+    position: absolute;
+    width: 30rem;
+    top: 2.5rem;
+    align-items: center;
+    text-align: center;
+    right: 5rem;
+    height: 10rem;
+  }
+
+  
+  .address:nth-child(1){
+    /* border: 2px   solid red; */
+    width: 90% !important;
+  }
+  .reg-form .reg-table td textarea{
+    padding-top: 2.5rem;
+    padding-left: 8rem;
+    font-size: 2rem;
+  }
+  
+
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 25%;
+  }
+  
+}
